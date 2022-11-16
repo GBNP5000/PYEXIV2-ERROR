@@ -1,0 +1,46 @@
+>pip install py3exiv2
+Collecting py3exiv2
+  Using cached py3exiv2-0.11.0.tar.gz (36 kB)
+  Preparing metadata (setup.py) ... done
+Installing collected packages: py3exiv2
+  DEPRECATION: py3exiv2 is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+  Running setup.py install for py3exiv2 ... error
+  error: subprocess-exited-with-error
+
+  × Running setup.py install for py3exiv2 did not run successfully.
+  │ exit code: 1
+  ╰─> [24 lines of output]
+      running install
+      running build
+      running build_py
+      creating build
+      creating build\lib.win-amd64-3.9
+      creating build\lib.win-amd64-3.9\pyexiv2
+      copying src\pyexiv2\exif.py -> build\lib.win-amd64-3.9\pyexiv2
+      copying src\pyexiv2\iptc.py -> build\lib.win-amd64-3.9\pyexiv2
+      copying src\pyexiv2\metadata.py -> build\lib.win-amd64-3.9\pyexiv2
+      copying src\pyexiv2\preview.py -> build\lib.win-amd64-3.9\pyexiv2
+      copying src\pyexiv2\utils.py -> build\lib.win-amd64-3.9\pyexiv2
+      copying src\pyexiv2\xmp.py -> build\lib.win-amd64-3.9\pyexiv2
+      copying src\pyexiv2\__init__.py -> build\lib.win-amd64-3.9\pyexiv2
+      running build_ext
+      building 'libexiv2python' extension
+      creating build\temp.win-amd64-3.9
+      creating build\temp.win-amd64-3.9\Release
+      creating build\temp.win-amd64-3.9\Release\src
+      C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MD -Ic:\python39\include -Ic:\python39\include -IC:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include -IC:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um -IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt -IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared -IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um -IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt -IC:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt /EHsc /Tpsrc/exiv2wrapper.cpp /Fobuild\temp.win-amd64-3.9\Release\src/exiv2wrapper.obj -g -std=c++11
+      cl : Command line warning D9002 : ignoring unknown option '-g'
+      cl : Command line warning D9002 : ignoring unknown option '-std=c++11'
+      exiv2wrapper.cpp
+      C:\Users\lenovo\AppData\Local\Temp\pip-install-5hyf4x78\py3exiv2_9f4ecba345954abc9443eab77e00569f\src\exiv2wrapper.hpp(32): fatal error C1083: Cannot open include file: 'exiv2/exiv2.hpp': No such file or directory
+      error: command 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\cl.exe' failed with exit code 2
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: legacy-install-failure
+
+× Encountered error while trying to install package.
+╰─> py3exiv2
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for output from the failure.
